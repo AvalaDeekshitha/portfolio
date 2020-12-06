@@ -7,8 +7,7 @@
 
 .topnav {
 	background-color: whitesmoke;
-	overflow: hidden;
-	
+  overflow: hidden;
   }
   
  
@@ -56,7 +55,7 @@
 
   
   .img-holder {
-       width: 50%;
+       width: 70%;
   }
 
   .img {
@@ -71,10 +70,11 @@
       border-top: 2px solid grey;
       border-bottom: 2px solid grey;
       overflow: hidden;
+      border-radius: 4px;
   }
 
   .about {
-    display: flex;
+  display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 50%;
@@ -82,7 +82,7 @@
 
   .name {
       color: white;
-      font-size: 48px;
+      font-size: 60px;
       font-weight: 700;   
   }
 
@@ -173,4 +173,122 @@
   .project-title{
     font-size:30px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .name {
+    font-size:40px;
+  } 
+
+  .img-holder{
+    width: 60%;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .name {
+    font-size:36px;
+  }
+
+  .img-holder{
+    width: 60%;
+    padding: 0px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 700px) {
+
+  .container {
+   flex-direction: column;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+  .name {
+    font-size:30px;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .img-holder{
+    width:80%;
+  }
+
+  .main-pic {
+    padding: 5px 15px 5px 15px;
+
+  }
+
+  .about {
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width: 490px) {
+
+  .topnav a{
+    font-size: 14px;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  }
+
+  .topnav a.active{
+    font-size: 14px;
+    font-weight: 800;
+    
+  }
+
+  .name {
+    font-size:30px;
+    font-weight: 700;
+    padding: 15px;
+  }
+
+  .img-holder{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+
+  .topnav a{
+    font-size: 10px;
+    font-weight: 1200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .topnav a.active{
+    font-size: 11px;
+    font-weight: 1200;
+
+  }
+
+}
+
+@media only screen and (max-width: 371px) {
+
+  .topnav a{
+    font-size: 7px;
+    font-weight: 2000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+  .topnav a.active{
+    font-size: 7px;
+    font-weight: 1200;
+
+  }
+
+}
+
 
