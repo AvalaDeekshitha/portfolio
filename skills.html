@@ -1,34 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="myskills">
-        <span class="title">My skills</span>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
 
-        <div class="drop">
-            <div class="drop1">
-                <span class="skill">
-                    Technical Skills
-                </span>
-            </div>
-            <div class="drop2">
-                <span class="skill">
-                    Non-technical Skills
-                </span>
-            </div>
-            <div class="drop3">
-                <span class="skill">
-                    Personal Projects
-                </span>
-            </div>
-        </div>
-    </div>
-   
+.topnav {
+	background-color: whitesmoke;
+  overflow: hidden;
+  }
+  
+ 
+  .topnav a {
+	  float: left;
+	  color: black;
+  	text-align: center;
+	  padding: 14px 16px;
+  	text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
 
-</body>
-</html>
+  }
+  
+
+  .topnav a:hover {
+	  background-color: black;
+	  color: white;
+    font-weight: 900;   
+    border-radius: 8px;
+  }
+  
+ 
+  .topnav a.active {
+  	font-weight: 1200;
+    color: brown;
+    font-size: 18px;
+  }
+
+  
+  .hero {
+      width: 100%;
+      min-height: 100vh;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }  
+
+  .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+	    align-items: center;
+  }
+
+  
+  .img-holder {
+       width: 60%;
+  }
+
+  .img {
+    border-radius: 8px;
+  }
+
+  .main-pic {
+      padding: 5px 50px 5px 50px;
+      align-items: center;
+      width: 100%;
+      border-radius: 5px;
+      border-top: 2px solid grey;
+      border-bottom: 2px solid grey;
+      overflow: hidden;
+      border-radius: 4px;
+  }
+
+  .about {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+  }
+
+  .name {
+      color: white;
+      font-size: 55px;
+      font-weight: 700;  
+       
+  }
+
+  .mydetails {
+      width: 100%;
+      min-height: 100vh;
+      background-color: black;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      justify-self: start;
+  }
+
+  .text {
+      color: white;
+      font-size: 24px;
+  }
+
+  .myskills {
+    width:100%;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .drop1{
+    min-height: 80px;
+    min-width: 80%;
+    background-color: whitesmoke;
+    margin: 15px;
+    transition: all 350ms;
+  }
+
+  .drop2{
+    min-height: 80px;
+    min-width: 80%;
+    background-color: whitesmoke;
+    margin: 15px;
+    transition: all 350ms;
+  }
+
+  .drop3{
+    min-height: 80px;
+    min-width: 80%;
+    background-color: whitesmoke;
+    margin: 15px;
+    transition: all 350ms;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+    padding-top: 20px;
+    font-weight: 500;
+  }
+
+  .drop1:hover {
+    min-height: 400px;
+  }
+
+  .drop2:hover {
+    min-height: 400px;
+  }
+
+  .drop3:hover {
+    min-height: 400px;
+  }
+
+  .project-title{
+    font-size:30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .name {
+    font-size:40px;
+  } 
+
+  .img-holder{
+    width: 60%;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .name {
+    font-size:36px;
+  }
+
+  .img-holder{
+    width: 60%;
+    padding: 0px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 700px) {
+
+  .container {
+   flex-direction: column;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+  .name {
+    font-size:30px;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .img-holder{
+    width:80%;
+  }
+
+  .main-pic {
+    padding: 5px 15px 5px 15px;
+
+  }
+
+  .about {
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width: 490px) {
+
+  .topnav a{
+    font-size: 14px;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  }
+
+  .topnav a.active{
+    font-size: 14px;
+    font-weight: 800;
+    
+  }
+
+  .name {
+    font-size:30px;
+    font-weight: 700;
+    padding: 15px;
+  }
+
+  .img-holder{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+
+  .topnav a{
+    font-size: 10px;
+    font-weight: 1200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .topnav a.active{
+    font-size: 11px;
+    font-weight: 1200;
+
+  }
+
+}
+
+@media only screen and (max-width: 371px) {
+
+  .topnav a{
+    padding: 14px 7px;
+    font-size: 7px;
+    font-weight: 2000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+  .topnav a.active{
+    font-size: 7px;
+    font-weight: 1200;
+
+  }
+
+}
+
+
