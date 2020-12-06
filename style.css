@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.topnav {
+	background-color: whitesmoke;
+	overflow: hidden;
+	
+  }
+  
+ 
+  .topnav a {
+	  float: left;
+	  color: black;
+  	text-align: center;
+	  padding: 14px 16px;
+  	text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  
+
+  .topnav a:hover {
+	  background-color: black;
+	  color: white;
+    font-weight: 900;   
+    border-radius: 8px;
+  }
+  
+ 
+  .topnav a.active {
+  	font-weight: 1200;
+    color: brown;
+    font-size: 18px;
+  }
+
+  
+  .hero {
+      width: 100%;
+      min-height: 100vh;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }  
+
+  .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+	  align-items: center;
+  }
+
+  
+  .img-holder {
+       width: 50%;
+  }
+
+  .img {
+    border-radius: 8px;
+  }
+
+  .main-pic {
+      padding: 5px 50px 5px 50px;
+      align-items: center;
+      width: 100%;
+      border-radius: 5px;
+      border-top: 2px solid grey;
+      border-bottom: 2px solid grey;
+      overflow: hidden;
+  }
+
+  .about {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+  }
+
+  .name {
+      color: white;
+      font-size: 48px;
+      font-weight: 700;   
+  }
+
+  .mydetails {
+      width: 100%;
+      min-height: 100vh;
+      background-color: black;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      justify-self: start;
+  }
+
+  .text {
+      color: white;
+      font-size: 24px;
+  }
+
+  .myskills {
+    width:100%;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .drop1{
+    min-height: 80px;
+    min-width: 80%;
+    background-color: whitesmoke;
+    margin: 15px;
+    transition: all 350ms;
+  }
+
+  .drop2{
+    min-height: 80px;
+    min-width: 80%;
+    background-color: whitesmoke;
+    margin: 15px;
+    transition: all 350ms;
+  }
+
+  .drop3{
+    min-height: 80px;
+    min-width: 80%;
+    background-color: whitesmoke;
+    margin: 15px;
+    transition: all 350ms;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+    padding-top: 20px;
+    font-weight: 500;
+  }
+
+  .drop1:hover {
+    min-height: 400px;
+  }
+
+  .drop2:hover {
+    min-height: 400px;
+  }
+
+  .drop3:hover {
+    min-height: 400px;
+  }
+
+  .project-title{
+    font-size:30px;
+}
+
